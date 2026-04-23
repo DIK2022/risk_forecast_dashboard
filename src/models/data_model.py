@@ -6,7 +6,7 @@ class DataModel(QObject):
     data_loaded = Signal(pd.DataFrame) # emits DataFrame
     
     def __init__(self):
-        suepr().__init__()
+        super().__init__()
         self._data = None
         
     def load_csv(self, path: str):
